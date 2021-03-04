@@ -1,0 +1,184 @@
+/**
+Theme Name: Buhauer Astra Child
+Author: Camilla Buhauer
+Author URI: http://camillabuhauer.dk
+Description: Child Theme for Astra
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: astra-child
+Template: astra
+*/
+
+
+/* navigationsmenu */ 
+/* 
+@media (max-width: 767px) {
+
+	.elementor-1968 .elementor-element.elementor-element-1fec843 .menu-item a.hfe-menu-item {
+		padding-left: 120px;
+		padding-right: 120px; }} */
+	
+
+/* ---------- scroll to the top ---------- */
+
+#scrollTop {
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+	z-index: 99;
+	font-size: 30px;
+	border: none;
+	outline: none;
+	color: white;
+	cursor: pointer;
+	padding: 7px 20px 0px 20px;
+	width:10%;
+  }
+
+  #scrollTop img {
+	 width:85%;
+  }
+
+ 
+/* ---------- tilbage/se mere knappen ---------- */
+
+  .box-1 { background-color: white; }
+
+  .box-2 { background-color: #EDEBEA }
+ 
+  
+  .btn_projects {
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	width: 250px;
+	cursor: pointer;
+  }
+  
+  
+  .btn-one {
+	color: black;
+	transition: all 0.3s;
+	position: relative;
+	font-size:1.5em;
+  }
+  .btn-one span {
+	transition: all 0.3s;
+  }
+  .btn-one::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity: 0;
+	transition: all 0.3s;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #3A42FA;
+	border-bottom-color: #3A42FA;
+	transform: scale(0.1, 1);
+  }
+  .btn-one:hover span {
+	letter-spacing: 2px;
+  }
+  .btn-one:hover::before {
+	opacity: 1; 
+	transform: scale(1, 1); 
+  }
+  .btn-one::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all 0.3s;
+  }
+  .btn-one:hover::after {
+	opacity: 0; 
+	transform: scale(0.1, 1);
+  }
+  
+
+
+  /* slider button */
+  
+.elementor-kit-1255 button, .elementor-kit-1255 input[type="button"], .elementor-kit-1255 input[type="submit"], .elementor-kit-1255 .elementor-button {
+	font-size: 1em;
+    border-style: none;
+    border-width:none;
+    border-color: none;
+    border-radius: 0px 0px 0px 0px;
+    padding: 5px 10px 5px 10px;
+	color:black;
+}
+
+
+.elementor-kit-1255 button, .elementor-kit-1255 input[type="button"], .elementor-kit-1255 input[type="submit"], .elementor-kit-1255 .elementor-button {
+    color: #6e6e6e;
+    background-color: rgba(2, 1, 1, 0);
+	font-weight: 500;
+
+   }
+	
+
+	/* ---------- root variables ---------- */
+:root {
+  --blue: blue;
+  --black:black;
+  --light-grey: #f1f1f4;
+  --text-color-black: black;
+}
+button:hover {
+	background-color:black!important;
+}
+
+button {
+  font-weight: 300;
+  text-align: center;
+  cursor: pointer;
+  padding: 12px 15px;
+  margin: 1em 0;
+  font-size: 1em;
+  border-radius: 0;
+  background-color: var(--blue);
+
+}
+
+button.selected {
+  color: var(--text-color-black);
+  border-style:solid;
+    border-width:0.1px;
+    border-color: black;
+ 
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* ---------- navigation burgerbar ---------- */
+
+.elementor-1968 .elementor-element.elementor-element-7327268 > .elementor-element-populated {
+    margin: 0px 0px 0px 0px!important;
+    padding: 0px 0px 0px 0px; }
+
+
+
+
+	  
